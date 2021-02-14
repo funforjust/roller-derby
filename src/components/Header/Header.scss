@@ -1,0 +1,65 @@
+$primary-color: rgb(27, 35, 31);
+
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: local('Shrikhand-Regular'), url('../../fonts/Shrikhand-Regular.ttf') format("truetype");
+}
+
+$font-main: 'Shrikhand-Regular', sans-serif;
+.text-header {
+    margin-left: 30px;
+    font-family: 'Shrikhand-Regular';
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+.header{
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-direction: raw;
+    justify-content: center;
+}
+
+.header-main-image{
+    //background-image: url('../../images/cabecera-estatica3.svg');
+    //height: 350px;
+    //min-height: 350px;
+    //height: 100%;
+    width: 1000px;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.img-fondo-example{
+    //width: 10em;
+    background-color: white;
+}
+
+.frame-image{
+    //width: 10em;
+    //background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 10em;
+}
+
+.background-image{
+    //width: 10em;
+    //background-color: white;
+    left: 0px;
+    top: 30px;
+    width: 100%;
+  height: auto;
+    //width: 55em;
+}
+/* (27, 35, 31); */
+/* (10, 83, 45)
+(99, 115, 105) */

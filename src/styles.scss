@@ -1,0 +1,16 @@
+
+
+$primary-color: rgb(27, 35, 31);
+
+$font-primary-color: black;
+html,body {
+  min-height: 100vh; /* needed for container min-height */
+}
+
+
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: local('Shrikhand-Regular'), url('../src/fonts/Shrikhand-Regular.ttf') format('ttf');
+  }
+  
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');

@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: local('Shrikhand-Regular'), url('../../fonts/Shrikhand-Regular.ttf') format("truetype");
+}
+
+$font-main: 'Shrikhand-Regular', sans-serif;
+
+.general-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //flex-direction: row;
+    flex-direction: column;
+}
+
+.general-container-content-i, .general-container-content-d{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+
+@media (min-width: 0px){
+    .general-container-content-i{ flex-direction: column;}
+}
+
+@media (min-width: 800px){
+    .general-container-content-i{ flex-direction: row; width: 100%;}   
+}
+
+@media (min-width: 1000px){
+    .general-container-content-i{ flex-direction: row; width: 70%;}   
+}
+
+@media (min-width: 0px){
+    .general-container-content-d{ flex-direction: column;}
+}
+
+@media (min-width: 800px){
+    .general-container-content-d{ flex-direction: row-reverse; width: 100%;}   
+}
+
+@media (min-width: 1000px){
+    .general-container-content-d{ flex-direction: row-reverse; width: 70%;}   
+}
+
+
+.text-container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.media-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    font-family: $font-main;
+}
+
+h2 {
+    font-family: 'Shrikhand-Regular';
+}
+
+.example-image{
+    width: 20em;
+    height: 10em;
+    background-color: gray;
+}

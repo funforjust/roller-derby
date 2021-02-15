@@ -60,13 +60,13 @@ body{
 @media (min-width: 0px){
   .content-navbar-section{flex-direction: row;}
   .content-buttons-navbar{ display: none; } 
-  .content-buttons-burger{display:block; margin-left:-17em} 
+  .content-buttons-burger{display:block; margin-bottom:-7em; position: absolute;} 
 }
 
 @media (min-width: 370px){
   .content-navbar-section{flex-direction: row;}
   .content-buttons-navbar{ display: none; } 
-  .content-buttons-burger{display:block;} 
+  .content-buttons-burger{display:block; margin-bottom:-7em; position: absolute;} 
 }
 
 @media (min-width: 800px){

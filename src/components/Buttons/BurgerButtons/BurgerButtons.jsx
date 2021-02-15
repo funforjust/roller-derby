@@ -11,7 +11,7 @@ export default function BurgerButtons() {
     return (
         <>
             <BurgerButton open={open} setOpen={setOpen} />
-            <Menu open={open} setOpen={setOpen} />    
+            <Menu open={open} setOpen={setOpen} />   
         </>
     )
 }
@@ -41,12 +41,12 @@ export default function BurgerButtons() {
 
     const BurgerButtonStyle = styled.button`
         display: flex;
+        {/*margin-top:-10em;*/}
         flex-direction: column;
         justify-content: space-around;
         width: 3rem;
         height: 2rem;
-        margin-top: -2.5em;
-        margin-left: 20em;
+        margin-left: 0em;
         background: rgb(27, 35, 31); 
         border: none;
         line{
@@ -59,9 +59,11 @@ export default function BurgerButtons() {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
         background: rgb(27, 35, 31);;
         width: 20em;
-        transform: ${ ({ open }) => open ? 'translateX(80%)' : 'translateX(-20%)'};
+
+        transform: ${ ({ open }) => open ? 'translateX(-100%)' : 'translateX(0%)'};
         transition: transform 0.3s ease;
 `
     

@@ -6,11 +6,13 @@ import logo from '../../assets/images/logo.png'
 import imageHeader from '../../images/cabecera-estatica3.svg';
 import frameImage from '../../images/marco-verde.svg';
 import backgroundImage from '../../images/imagen-fondo.svg';
+import BurgerButtons from '../Buttons/BurgerButtons/BurgerButtons';
 
 export default function Header() {
     return (
         <>
         <header className="header">
+        
             {/*<img className="Header_logo" src={logo} alt="Logo" />*/}
             <div className="header-main-image">
                 <img src={imageHeader}></img>

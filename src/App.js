@@ -14,13 +14,14 @@ function App() {
   return (
     <Router>
     <div className="container">
+        <div className="content-buttons-burger"> 
+        <BurgerButtons />
+        </div> 
       {/*<div className="header-container">*/}
           <Header />
       {/*</div>*/}
       <div className="content-navbar-section">
-        <div className="content-buttons-burger"> 
-          <BurgerButtons />
-        </div> 
+        
         <div className="content-buttons-navbar"> 
           <NavBar/>
         </div>  

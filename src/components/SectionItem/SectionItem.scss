@@ -26,6 +26,7 @@ $font-main: 'Shrikhand-Regular', sans-serif;
 @media (min-width: 0px){
     .general-container-content-i{ 
         flex-direction: column;
+        align-items: center;
         
 
     }
@@ -46,7 +47,7 @@ $font-main: 'Shrikhand-Regular', sans-serif;
 @media (min-width: 0px){
     .general-container-content-d{ 
         flex-direction: column;
-        
+        align-items: center;
     }
 }
 

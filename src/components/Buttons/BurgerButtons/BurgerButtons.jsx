@@ -5,11 +5,12 @@ import styled from 'styled-components';
 
 export default function BurgerButtons() {
     const [statusMenu, setStatusMenu] = useState(false);
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
     const node = React.useRef();
 
     return (
         <>
+        {console.log("is opened?", open)};
             <BurgerButton open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />   
         </>

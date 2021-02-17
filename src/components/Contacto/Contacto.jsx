@@ -17,6 +17,11 @@ const Inicio = () => {
              lorem sed, consectetur vehicula nisl. Phasellus vitae dolor libero. Fusce pharetra 
              convallis ex, pulvinar suscipit diam viverra nec.`,
             mediaContent: 'src/image',
+            facebook: `
+            <div id="fb-root">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=358149341738168&autoLogAppEvents=1" nonce="wZBGl5PS"></script>  
+<div class="fb-like" data-href="https://www.facebook.com/madridersrollerderby" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+</div>`
             
         }
     ];

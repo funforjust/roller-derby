@@ -25,6 +25,10 @@ const SectionItem = (props) => {
                         <h2 className='title'>{props.webDataItem.title}</h2>
                         <p>{props.webDataItem.subtitle}</p>
                         <p>{props.webDataItem.description}</p>
+                        {console.log("webdata: ", props.webDataItem)}
+                        {console.log("webdatafb: ", props.webDataItem.facebook)}
+                        {console.log("webdatafb: ",(new DOMParser().parseFromString(props.webDataItem.facebook, "text/xml")).firstChild.innerHTML)}
+                        <p>{(props.webDataItem.facebook)?(new DOMParser().parseFromString(props.webDataItem.facebook, "text/xml")).firstChild.innerHTML :""}</p>
                     </div>
                     <div className='media-container'>
                         <div className='example-image'>{props.webDataItem.mediaContent}</div>

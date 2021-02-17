@@ -24,11 +24,19 @@ $font-main: 'Shrikhand-Regular', sans-serif;
 
 
 @media (min-width: 0px){
-    .general-container-content-i{ flex-direction: column;}
+    .general-container-content-i{ 
+        flex-direction: column;
+        
+
+    }
 }
 
 @media (min-width: 800px){
-    .general-container-content-i{ flex-direction: row; width: 100%;}   
+    .general-container-content-i{ 
+        flex-direction: row; 
+        width: 100%;
+        ;
+    }   
 }
 
 @media (min-width: 1000px){
@@ -36,7 +44,10 @@ $font-main: 'Shrikhand-Regular', sans-serif;
 }
 
 @media (min-width: 0px){
-    .general-container-content-d{ flex-direction: column;}
+    .general-container-content-d{ 
+        flex-direction: column;
+        
+    }
 }
 
 @media (min-width: 800px){
@@ -58,6 +69,7 @@ $font-main: 'Shrikhand-Regular', sans-serif;
     flex-direction: row;
     align-items: center;
     text-align: center;
+    margin-bottom: 10px;
 }
 .title{
     font-family: $font-main;

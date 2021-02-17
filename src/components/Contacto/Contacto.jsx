@@ -16,7 +16,8 @@ const Inicio = () => {
              Donec id dignissim mauris, sed tristique ante. Vivamus ipsum urna, fringilla in 
              lorem sed, consectetur vehicula nisl. Phasellus vitae dolor libero. Fusce pharetra 
              convallis ex, pulvinar suscipit diam viverra nec.`,
-            mediaContent: 'src/image'
+            mediaContent: 'src/image',
+            
         }
     ];
     const [webData, setWebData] =  useState(webDataInit);

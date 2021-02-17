@@ -58,7 +58,9 @@ body{
 }
 
 @media (min-width: 0px){
-  .content-navbar-section{flex-direction: row;}
+  .content-navbar-section{
+    flex-direction: row;
+  justify-content: center;}
   .content-buttons-navbar{ display: none; } 
   .content-buttons-burger{display:block; 
     margin-bottom:-7em; 
@@ -68,7 +70,10 @@ body{
 }
 
 @media (min-width: 370px){
-  .content-navbar-section{flex-direction: row;}
+  .content-navbar-section{
+    flex-direction: row;
+
+  }
   .content-buttons-navbar{ display: none; } 
   .content-buttons-burger{display:block; 
     margin-bottom:-7em; 

@@ -31,7 +31,7 @@ export default function BurgerButtons() {
 
     const Menu = ({ setOpen, open }) => {
         return (
-            <MenuS open = {open}>
+            <MenuS open = {open} onClick={()=>setOpen(!open)}>
                 <Link to='/' className="burger-button-element" onClick={()=>setOpen(!open)}>INICIO</Link>
                 <Link to='/equipos' className="burger-button-element" onClick={()=>setOpen(!open)}>EQUIPOS</Link>
                 <Link to='contacto' className="burger-button-element" onClick={()=>setOpen(!open)}>CONTACTO</Link>
@@ -42,6 +42,7 @@ export default function BurgerButtons() {
     const BurgerButtonStyle = styled.button`
         display: flex;
         {/*margin-top:-10em;*/}
+        cursor: pointer;
         flex-direction: column;
         justify-content: space-around;
         width: 3rem;
@@ -59,7 +60,7 @@ export default function BurgerButtons() {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        cursor: pointer;
         background: rgb(27, 35, 31);;
         width: 20em;
         height: 105%;

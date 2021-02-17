@@ -62,7 +62,10 @@ export default function BurgerButtons() {
         
         background: rgb(27, 35, 31);;
         width: 20em;
-
+        height: 105%;
+        top: -3rem;
+        background-color: #1b231f;
+        position: relative;
         transform: ${ ({ open }) => open ? 'translateX(-100%)' : 'translateX(0%)'};
         transition: transform 0.3s ease;
 `

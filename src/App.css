@@ -60,13 +60,20 @@ body{
 @media (min-width: 0px){
   .content-navbar-section{flex-direction: row;}
   .content-buttons-navbar{ display: none; } 
-  .content-buttons-burger{display:block; margin-bottom:-7em; position: absolute;} 
+  .content-buttons-burger{display:block; 
+    margin-bottom:-7em; 
+    position: absolute;
+    height: 100%;
+  } 
 }
 
 @media (min-width: 370px){
   .content-navbar-section{flex-direction: row;}
   .content-buttons-navbar{ display: none; } 
-  .content-buttons-burger{display:block; margin-bottom:-7em; position: absolute;} 
+  .content-buttons-burger{display:block; 
+    margin-bottom:-7em; 
+    position: absolute;
+    height: 100%;} 
 }
 
 @media (min-width: 800px){

@@ -8,14 +8,13 @@ const Equipos = () => {
         {
             id: 0,
             title: 'Equipos',
-            subtitle: 'EQUIPO1, EQUIPO2, EQUIPO3',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam interdum ipsum at est hendrerit molestie. Donec quam lorem, 
-            ullamcorper sed hendrerit id, cursus non lacus. Sed turpis nisl, ornare in 
-            egestas condimentum, mattis nec nisl. In placerat tincidunt augue eget pellentesque.
-             Donec id dignissim mauris, sed tristique ante. Vivamus ipsum urna, fringilla in 
-             lorem sed, consectetur vehicula nisl. Phasellus vitae dolor libero. Fusce pharetra 
-             convallis ex, pulvinar suscipit diam viverra nec.`,
+            description: <>
+            <p>MadRiders nació en el año 2015 como equipo masculino de Roller Derby en la ciudad de Madrid. 
+            <p>Actualmente bajo reglamento WFTDA tenemos equipo femenino y  mixto, inscrito en MRDA (Man's Roller Derby Association). </p>
+            En eventos organizados por la Federación de Patinaje también contamos con equipo masculino para esta modalidad. </p>
+            <p>Bajo reglamento WS contamos con equipo femenino y masculino.</p>
+            </>,
+            subtitle: '',
             mediaContent: 'src/image'
         },
     ];
@@ -25,7 +24,6 @@ const Equipos = () => {
     return (
         <>
             <SectionItem webDataItem={webData[0]} key={webData.id} ></SectionItem>
-            <div className="espacio-blanco"></div>
         </>
 
     )

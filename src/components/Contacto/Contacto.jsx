@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionItem from '../SectionItem/SectionItem';
 
 
@@ -9,28 +9,27 @@ const Inicio = () => {
             id: 0,
             title: 'Contacto',
             subtitle: '',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam interdum ipsum at est hendrerit molestie. Donec quam lorem, 
-            ullamcorper sed hendrerit id, cursus non lacus. Sed turpis nisl, ornare in 
-            egestas condimentum, mattis nec nisl. In placerat tincidunt augue eget pellentesque.
-             Donec id dignissim mauris, sed tristique ante. Vivamus ipsum urna, fringilla in 
-             lorem sed, consectetur vehicula nisl. Phasellus vitae dolor libero. Fusce pharetra 
-             convallis ex, pulvinar suscipit diam viverra nec.`,
+            description: <>
+            <p>Es imprescindible ponerse en contacto para venir a probar. </p>
+            <p>Tenemos un periodo de prueba de un mes, para lo cual es necesario que rellenes la ficha de inscripción y la hoja de exoneración de responsabilidades: el primero, es un mes para que puedas decidir si esto te gusta y quieres quedarte con nosotros. Para continuar será necesario que te federes con la Federación Madrileña de Patinaje (nosotros te gestionamos todo). La cuota anual dependerá de si te federas con ficha de escuela ya que estas aprendiendo o si te federas como jugador de competición.
+            Links a email y rrss.</p>
+            <p> <a href="https://www.instagram.com/themadriders/">Instagram: The MadRiders</a></p>
+            <p> <a href="https://www.facebook.com/madridersrollerderby">Facebook: MadRiders roller Derby</a></p>
+            <p> <a href="mailto:bouts.madriders@gmail.com">bouts.madriders@gmail.com</a></p>
+            </>,
             mediaContent: 'src/image',
-            facebook: `
-            <div id="fb-root">
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=358149341738168&autoLogAppEvents=1" nonce="wZBGl5PS"></script>  
-<div class="fb-like" data-href="https://www.facebook.com/madridersrollerderby" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
-</div>`
+            facebook: 'https://www.facebook.com/madridersrollerderby'
+            
             
         }
     ];
     const [webData, setWebData] =  useState(webDataInit);
 
     
+    
     return (
         <>
-            <SectionItem webDataItem={webData[0]} key={webData.id} ></SectionItem>
+        <SectionItem webDataItem={webData[0]} key={webData.id} ></SectionItem>
         </>
     )
 }

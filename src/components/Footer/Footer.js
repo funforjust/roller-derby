@@ -14,6 +14,7 @@ export default function Footer() {
             <a href="http://www.fmp.es/"><img className="Footer-logo" src={fmp} alt="ARDE" /></a>
             <a href="https://mrda.org/"><img className="Footer-logo" src={mrda} alt="ARDE" /></a>
             <a href="https://fep.es/website/index.asp"><img className="Footer-logo" src={rfep} alt="ARDE" /></a>
+            <p style={{color: 'white'}}>Developed by: <a href="https://github.com/funforjust">funforjust</a></p>
         </div>
     )
 }

@@ -10,7 +10,6 @@ export default function BurgerButtons() {
 
     return (
         <>
-        {console.log("is opened?", open)};
             <BurgerButton open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />   
         </>

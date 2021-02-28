@@ -1,34 +1,54 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import '../../index.css';
 import '../SectionItem/SectionItem.scss';
 import '../../styles.scss'
 
 const SectionItem = (props) => {
     //const [contentStyle, setContentStyle] = useState('general-container-content-i');
-    
+    const [url, setUrl] = useState('');
     const checkLeftOrRight = (id) => {
-        if (id % 2 === 0){
-            console.log('content i');
-            return 'general-container-content-i';
-        }else{
-            console.log('content d');
-            return 'general-container-content-d';
-        }
+        return (id % 2 === 0)?'general-container-content-i':'general-container-content-d';
     }
+
+    const handleChangePage = () => {
+        let likeBtn = document.createElement('div');
+        likeBtn.className = "fb-like";
+        likeBtn.setAttribute("data-href", url);
+        likeBtn.setAttribute("data-width", "");
+        likeBtn.setAttribute("data-layout", "standard");
+        likeBtn.setAttribute("data-action", "like");
+        likeBtn.setAttribute("data-size", "small");
+        likeBtn.setAttribute("data-share", "true");
+    
+        let likePanel = document.getElementById("like-panel");
+        likePanel.removeChild(likePanel.childNodes[0]);
+        likePanel.appendChild(likeBtn);
+    
+        window.FB.XFBML.parse(likePanel);
+        setUrl(props.webDataItem.facebook);
+      }
+      useEffect(() => {
+        if(props.webDataItem.facebook) handleChangePage();
+      });
+
+
     return (
         <>
-            {console.log("PROPS" , props)}
-            {console.log("direction:", checkLeftOrRight(props.webDataItem.id))}
-            <div className='general-container'>
+            <div className='general-container'> 
                 <div className={checkLeftOrRight(props.webDataItem.id)}>
                     <div className='text-container'>
                         <h2 className='title'>{props.webDataItem.title}</h2>
+                        {(props.webDataItem.facebook)?
+                            <div id='like-panel'>
+                                <div className="fb-like" data-href={url} data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+                            </div>
+                            :
+                            null
+                        }
+                        
                         <p>{props.webDataItem.subtitle}</p>
                         <p>{props.webDataItem.description}</p>
-                        {console.log("webdata: ", props.webDataItem)}
-                        {console.log("webdatafb: ", props.webDataItem.facebook)}
-                        {console.log("webdatafb: ",(new DOMParser().parseFromString(props.webDataItem.facebook, "text/xml")).firstChild.innerHTML)}
-                        <p>{(props.webDataItem.facebook)?(new DOMParser().parseFromString(props.webDataItem.facebook, "text/xml")).firstChild.innerHTML :""}</p>
+                        
                     </div>
                     <div className='media-container'>
                         <div className='example-image'>{props.webDataItem.mediaContent}</div>

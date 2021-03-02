@@ -47,11 +47,11 @@ const SectionItem = (props) => {
                         }
                         
                         <p>{props.webDataItem.subtitle}</p>
-                        <p>{props.webDataItem.description}</p>
+                        <div>{props.webDataItem.description}</div>
                         
                     </div>
                     <div className='media-container'>
-                        <div className='example-image'>{props.webDataItem.mediaContent}</div>
+                            <img src={props.webDataItem.mediaContent} width='100%' max-width='600px'></img>
                     </div>
                 </div>
             </div>

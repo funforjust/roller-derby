@@ -16,7 +16,7 @@ export default function Header() {
         
             {/*<img className="Header_logo" src={logo} alt="Logo" />*/}
             <div className="header-main-image">
-                <img src={imageHeader} width="800" ></img>
+                <img src={imageHeader} max-width='800px' width='100%' ></img>
                 {/*<img className="frame-image" src={frameImage}></img>
                 <img className="background-image" src={backgroundImage} width="500" height="1000"></img>
                 {

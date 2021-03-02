@@ -22,56 +22,36 @@ $font-main: 'Shrikhand-Regular', sans-serif;
     border-bottom: 1px solid rgb(226, 226, 226);
 }
 
-
-@media (min-width: 0px){
-    .general-container-content-i{ 
-        flex-direction: column;
-        align-items: center;
-        
-
-    }
-}
-
-@media (min-width: 800px){
-    .general-container-content-i{ 
-        flex-direction: row; 
-        width: 100%;
-        ;
-    }   
-}
-
-@media (min-width: 1000px){
-    .general-container-content-i{ flex-direction: row; width: 70%;}   
-}
-
-@media (min-width: 0px){
-    .general-container-content-d{ 
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (min-width: 800px){
-    .general-container-content-d{ flex-direction: row-reverse; width: 100%;}   
-}
-
-@media (min-width: 1000px){
-    .general-container-content-d{ flex-direction: row-reverse; width: 70%;}   
-}
-
-
-.text-container{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .media-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
+    
 }
+
+@media (min-width: 0px){
+    .general-container-content-d{ flex-direction: column;align-items: center;}
+    .general-container-content-i{ flex-direction: column;align-items: center;}
+    .text-container{ width: 90%;margin-left: 2px;margin-right: 2px;}
+    .media-container{width: 90%;}
+}
+
+@media (min-width: 800px){
+    .general-container-content-d{ flex-direction: row-reverse; width: 100%;}
+    .general-container-content-i{ flex-direction: row; width: 100%;}
+    .text-container{ width: 50%;margin-left: 20px;margin-right: 20px;}
+    .media-container{width: 50%;}
+}
+
+@media (min-width: 1000px){
+    .general-container-content-d{ flex-direction: row-reverse; width: 90%;}
+    .general-container-content-i{ flex-direction: row; width: 90%;}  
+    .text-container{ width: 50%;margin-left: 20px;margin-right: 20px;}
+    .media-container{width: 50%;}
+}
+
 .title{
     font-family: $font-main;
 }

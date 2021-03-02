@@ -18,11 +18,10 @@ export default function BurgerButtons() {
 
     const BurgerButton = ({open, setOpen }) => {
         return (
-
             <BurgerButtonStyle open={open} onClick={() => setOpen(!open)}>
-                <line/>
-                <line/>
-                <line/>
+                <div style={{width: '100%', height: '0.25rem', background: 'white'}}/>
+                <div style={{width: '100%', height: '0.25rem', background: 'white'}}/>
+                <div style={{width: '100%', height: '0.25rem', background: 'white'}}/>
             </BurgerButtonStyle>
 
 
@@ -41,13 +40,13 @@ export default function BurgerButtons() {
 
     const BurgerButtonStyle = styled.button`
         display: flex;
-        {/*margin-top:-10em;*/}
         cursor: pointer;
         flex-direction: column;
         justify-content: space-around;
         width: 3rem;
         height: 2rem;
-        margin-left: 0em;
+        margin-left: 0.25rem;
+        margin-top: 0.25rem;
         background: rgb(27, 35, 31); 
         border: none;
         line{
@@ -62,7 +61,7 @@ export default function BurgerButtons() {
         justify-content: center;
         cursor: pointer;
         background: rgb(27, 35, 31);;
-        width: 20em;
+        width: 32em;
         height: 105%;
         top: -3rem;
         background-color: #1b231f;

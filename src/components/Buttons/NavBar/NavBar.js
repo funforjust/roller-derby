@@ -3,8 +3,6 @@ import {Link} from 'react-router-dom'
 import './NavBar.scss'
 
 export default function NavBar() {
-    const [statusMenu, setStatusMenu] = useState(false);
-    const [open, setOpen] = React.useState(false);
     const node = React.useRef();
 
     return (

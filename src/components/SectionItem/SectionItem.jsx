@@ -12,20 +12,18 @@ const SectionItem = (props) => {
 
     const handleChangePage = () => {
         let likeBtn = document.createElement('div');
-        likeBtn.className = "fb-like";
-        likeBtn.setAttribute("data-href", url);
-        likeBtn.setAttribute("data-width", "");
-        likeBtn.setAttribute("data-layout", "standard");
-        likeBtn.setAttribute("data-action", "like");
-        likeBtn.setAttribute("data-size", "small");
-        likeBtn.setAttribute("data-share", "true");
+        likeBtn.className = 'fb-like';
+        likeBtn.setAttribute('data-href', url);
+        likeBtn.setAttribute('data-width', "");
+        likeBtn.setAttribute('data-layout', "standard");
+        likeBtn.setAttribute('data-action', "like");
+        likeBtn.setAttribute('data-size', "small");
+        likeBtn.setAttribute('data-share', "true");
     
         let likePanel = document.getElementById("like-panel");
         likePanel.removeChild(likePanel.childNodes[0]);
         likePanel.appendChild(likeBtn);
-        console.log("window", window);
-        console.log("window.FB", window.FB)
-        window.FB.XFBML.parse(likePanel);
+        if(window.FB) window.FB.XFBML.parse(likePanel);
         
         setUrl(props.webDataItem.facebook);
       }

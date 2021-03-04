@@ -47,8 +47,8 @@ const Inicio = () => {
                 
                 <p>Puedes descargar las reglas aqui:</p> 
                 
-                <p><a href="https://static.wftda.com/rules/wftda-rules-spanish-femenino.pdf">WFTDA Rules Spanish Femenino</a></p>
-                <p><a href="http://www.worldskate.org/roller-derby/about/regulations.html">Regulations</a></p>
+                <p><a href="https://static.wftda.com/rules/wftda-rules-spanish-femenino.pdf" target="_blank" rel="noreferrer">WFTDA Rules Spanish Femenino</a></p>
+                <p><a href="http://www.worldskate.org/roller-derby/about/regulations.html" target="_blank" rel="noreferrer">Regulations</a></p>
                 
                 <p>Si quieres venir a probar ponte en contacto con nosotros. Puedes encontrar diversas formas de contacto <a href="./contacto">aquí</a></p>
             </>,

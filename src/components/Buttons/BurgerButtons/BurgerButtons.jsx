@@ -64,6 +64,7 @@ export default function BurgerButtons() {
         position: relative;
         transform: ${ ({ open }) => open ? 'translateX(-100%)' : 'translateX(0%)'};
         transition: transform 0.3s ease;
+        z-index: 9;
         overflow-x: auto;
         overflow-y: auto;
 `

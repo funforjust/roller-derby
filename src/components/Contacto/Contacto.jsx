@@ -19,8 +19,8 @@ const Contacto = () => {
                  de escuela ya que estas aprendiendo o si te federas como jugador de competición.
                 Links a email y rrss.</p>
                 
-                <p><InstagramOutlined style={{ fontSize: '20px', color: 'gray' }} /> <a href="https://www.instagram.com/themadriders/">instagram.com/themadriders/</a></p>
-                <p><FacebookOutlined  style={{ fontSize: '20px', color: 'gray' }} /> <a href="https://www.facebook.com/madridersrollerderby">facebook.com/madridersrollerderby</a></p>
+                <p><InstagramOutlined style={{ fontSize: '20px', color: 'gray' }} /> <a href="https://www.instagram.com/themadriders/" target="_blank" rel="noreferrer">instagram.com/themadriders/</a></p>
+                <p><FacebookOutlined  style={{ fontSize: '20px', color: 'gray' }} /> <a href="https://www.facebook.com/madridersrollerderby" target="_blank" rel="noreferrer">facebook.com/madridersrollerderby</a></p>
                 <p><MailOutlined style={{ fontSize: '20px', color: 'gray' }} /> <a href="mailto:bouts.madriders@gmail.com">bouts.madriders@gmail.com</a></p>
             </>,
             mediaContent: imgContacto,

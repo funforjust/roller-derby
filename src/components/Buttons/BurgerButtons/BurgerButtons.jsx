@@ -18,7 +18,7 @@ export default function BurgerButtons() {
 
     const BurgerButton = ({open, setOpen }) => {
         return (
-            <BurgerButtonStyle open={open} onClick={() => setOpen(!open)}>
+            <BurgerButtonStyle open={open} onClick={() => { setOpen(!open) }}>
                 <div style={{width: '100%', height: '0.25rem', background: 'white'}}/>
                 <div style={{width: '100%', height: '0.25rem', background: 'white'}}/>
                 <div style={{width: '100%', height: '0.25rem', background: 'white'}}/>
@@ -30,7 +30,8 @@ export default function BurgerButtons() {
 
     const Menu = ({ setOpen, open }) => {
         return (
-            <MenuS open = {open} onClick={()=>setOpen(!open)}>
+            <MenuS open = {open} onClick={()=>{setOpen(!open)}}>
+
                 <Link style={{color:'white'}} to='/' className="burger-button-element" onClick={()=>setOpen(!open)}>INICIO</Link>
                 <Link style={{color:'white'}} to='/equipos' className="burger-button-element" onClick={()=>setOpen(!open)}>EQUIPOS</Link>
                 <Link style={{color:'white'}} to='contacto' className="burger-button-element" onClick={()=>setOpen(!open)}>CONTACTO</Link>

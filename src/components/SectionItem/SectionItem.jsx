@@ -23,8 +23,10 @@ const SectionItem = (props) => {
         let likePanel = document.getElementById("like-panel");
         likePanel.removeChild(likePanel.childNodes[0]);
         likePanel.appendChild(likeBtn);
-    
+        console.log("window", window);
+        console.log("window.FB", window.FB)
         window.FB.XFBML.parse(likePanel);
+        
         setUrl(props.webDataItem.facebook);
       }
       useEffect(() => {
@@ -38,15 +40,18 @@ const SectionItem = (props) => {
                 <div className={checkLeftOrRight(props.webDataItem.id)}>
                     <div className='text-container'>
                         <h2 className='title'>{props.webDataItem.title}</h2>
-                        {(props.webDataItem.facebook)?
-                            <div id='like-panel'>
-                                <div className="fb-like" data-href={url} data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
-                            </div>
-                            :
-                            null
-                        }       
+                              
                         <p>{props.webDataItem.subtitle}</p>
                         <div>{props.webDataItem.description}</div>
+                        {(props.webDataItem.facebook)?
+                        
+                        <div id='like-panel' style={{position:'relative'}}>
+                            {/*<div className="fb-like" data-href={url} data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div> */}
+                            <div className="fb-like" style={{position:'relative'}} data-lazy='true' data-href={url} data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div> 
+                        </div>
+                        :
+                        null
+                    } 
                     </div>
                     <div className='media-container'>
                             <img src={props.webDataItem.mediaContent} width='100%' max-width='600px'></img>

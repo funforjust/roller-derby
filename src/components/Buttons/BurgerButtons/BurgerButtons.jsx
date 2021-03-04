@@ -31,9 +31,9 @@ export default function BurgerButtons() {
     const Menu = ({ setOpen, open }) => {
         return (
             <MenuS open = {open} onClick={()=>setOpen(!open)}>
-                <Link to='/' className="burger-button-element" onClick={()=>setOpen(!open)}>INICIO</Link>
-                <Link to='/equipos' className="burger-button-element" onClick={()=>setOpen(!open)}>EQUIPOS</Link>
-                <Link to='contacto' className="burger-button-element" onClick={()=>setOpen(!open)}>CONTACTO</Link>
+                <Link style={{color:'white'}} to='/' className="burger-button-element" onClick={()=>setOpen(!open)}>INICIO</Link>
+                <Link style={{color:'white'}} to='/equipos' className="burger-button-element" onClick={()=>setOpen(!open)}>EQUIPOS</Link>
+                <Link style={{color:'white'}} to='contacto' className="burger-button-element" onClick={()=>setOpen(!open)}>CONTACTO</Link>
             </MenuS>
         )
     }
@@ -49,11 +49,6 @@ export default function BurgerButtons() {
         margin-top: 0.25rem;
         background: rgb(27, 35, 31); 
         border: none;
-        line{
-            width: 100%;
-            height: 0.25rem;
-            background: white;
-        }
     `
     const MenuS = styled.nav`
         display: flex;

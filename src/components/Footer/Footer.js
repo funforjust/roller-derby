@@ -19,7 +19,7 @@ export default function Footer() {
 
             <div className = 'footer-botom'>
                 <p style={{color: 'white', textAlign: 'right', fontSize:'11px', marginRight:'10px'}}>
-                    Developed by: <a className='a-footer' href="https://github.com/funforjust">funforjust</a>
+                    Developed by <a className='a-footer' href="https://github.com/funforjust">funforjust</a>
                 </p>
             </div>
         </div>

@@ -45,14 +45,20 @@
 	border-top-color: black;
 	border-bottom-color: grey;
 	transform: scale(0.1, 1);
+	text-decoration: none;
+	color: white;
 }
 .NavBar_element:hover span {
 	letter-spacing: 2px;
+	text-decoration: none;
+	color: white;
 }
 .NavBar_element:hover::before {
 	opacity: 1;	
 	transform: scale(1, 1);	
 	background-color: rgba(100, 100, 98, 0.1);
+	text-decoration: none;
+	color: white;
 }
 .NavBar_element::after {
 	content: '';
@@ -63,11 +69,15 @@
 	height: 100%;
 	z-index: 1;
 	transition: all 0.3s;
+	text-decoration: none;
+	color: white;
 	
 }
 .NavBar_element:hover::after {
 	opacity: 0;	
 	transform: scale(0.1, 1);
+	text-decoration: none;
+	color: white;
 }
 
 .burger-button{

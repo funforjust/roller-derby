@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SectionItem from '../SectionItem/SectionItem';
 
 
-const Inicio = () => {
+const NotFound = () => {
     
     const webDataInit = [
         {
@@ -23,4 +23,4 @@ const Inicio = () => {
     )
 }
 
-export default Inicio
+export default NotFound

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import SectionItem from '../SectionItem/SectionItem';
 import imgContacto from '../../images/contacto.png';
+import { InstagramOutlined, FacebookOutlined, MailOutlined } from '@ant-design/icons';
 
-const Inicio = () => {
+const Contacto = () => {
     
     const webDataInit = [
         {
@@ -17,9 +18,10 @@ const Inicio = () => {
                 Madrileña de Patinaje (nosotros te gestionamos todo). La cuota anual dependerá de si te federas con ficha
                  de escuela ya que estas aprendiendo o si te federas como jugador de competición.
                 Links a email y rrss.</p>
-                <p>Instagram: <a href="https://www.instagram.com/themadriders/">The MadRiders</a></p>
-                <p>Facebook: <a href="https://www.facebook.com/madridersrollerderby">MadRiders roller Derby</a></p>
-                <p>Email: <a href="mailto:bouts.madriders@gmail.com">bouts.madriders@gmail.com</a></p>
+                
+                <p><InstagramOutlined style={{ fontSize: '20px', color: 'gray' }} /> <a href="https://www.instagram.com/themadriders/">instagram.com/themadriders/</a></p>
+                <p><FacebookOutlined  style={{ fontSize: '20px', color: 'gray' }} /> <a href="https://www.facebook.com/madridersrollerderby">facebook.com/madridersrollerderby</a></p>
+                <p><MailOutlined style={{ fontSize: '20px', color: 'gray' }} /> <a href="mailto:bouts.madriders@gmail.com">bouts.madriders@gmail.com</a></p>
             </>,
             mediaContent: imgContacto,
             facebook: 'https://www.facebook.com/madridersrollerderby'
@@ -38,4 +40,4 @@ const Inicio = () => {
     )
 }
 
-export default Inicio
+export default Contacto

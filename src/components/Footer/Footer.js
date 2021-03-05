@@ -5,6 +5,7 @@ import csd from '../../assets/images/csd.png'
 import fmp from '../../assets/images/fmp.png'
 import mrda from '../../assets/images/mrda.png'
 import rfep from '../../assets/images/rfep.png'
+import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 
 export default function Footer() {
     return (
@@ -19,9 +20,10 @@ export default function Footer() {
 
             <div className = 'footer-botom'>
                 <p style={{color: 'white', textAlign: 'right', fontSize:'11px', marginRight:'10px'}}>
-                    Developed by 
-                    <a className='a-footer' href='https://www.linkedin.com/in/adriano-osses/'>adrianoosses </a>
-                    <a className='a-footer' href="https://github.com/funforjust">(funforjust)</a>
+                    <p>Developed by&nbsp;
+                    <LinkedinOutlined /><a className='a-footer' href='https://www.linkedin.com/in/adriano-osses/'> adrianoosses - </a>
+                    <GithubOutlined /><a className='a-footer' href="https://github.com/funforjust"> funforjust </a>
+                    </p>
                 </p>
             </div>
         </div>
